@@ -24,13 +24,45 @@
                         <div class="accordion" id="locationAccordion">
                             @php
                                 $locations = [
-                                    'Greater Accra' => ['Accra Central', 'Tema', 'Madina'],
-                                    'Ashanti' => ['Kumasi', 'Obuasi', 'Ejisu'],
-                                    'Eastern' => ['Koforidua', 'Nkawkaw'],
-                                    'Western' => ['Takoradi', 'Sekondi'],
-                                    'Northern' => ['Tamale', 'Yendi'],
+                                    'Greater Accra' => [
+                                        'Burma Camp', 'Accra North', 'GPO', 'Cantonments', 'Dansoman', 'Legon', 'Madina',
+                                        'TUC', 'Kaneshie', 'Ministries', 'Mamprobi', 'New Achimota', 'Tema Community 1', 'Tema Community 11'
+                                    ],
+                                    'Central Region' => [
+                                        'Cape Coast', 'Agona Swedru', 'Saltpond', 'Dunkwa-On-Offin',
+                                        'Winneba', 'Elmina', 'Apam'
+                                    ],
+                                    'Northern Region' => [
+                                        'Tamale', 'Education Ridge', 'Yendi', 'Walewale', 'Damongo'
+                                    ],
+                                    'Upper West Region' => [
+                                        'Wa', 'Lawra', 'Tumu'
+                                    ],
+                                    'Upper East Region' => [
+                                        'Bawku', 'Navrongo', 'Bolgatanga'
+                                    ],
+                                    'Ashanti Region' => [
+                                        'Kumasi Main', 'KNUST', 'Ashanti-Mampong', 'Bekwai-Ashanti', 'Konongo', 'Obuasi',
+                                        'Offinso', 'Ejura', 'Juaso', 'Akrokeri', 'Ejisu', 'Agogo'
+                                    ],
+                                    'Brong–Ahafo Region' => [
+                                        'Sunyani', 'Berekum', 'Techiman', 'Bechem',
+                                        'Atebubu', 'Kintampo', 'Dormaa Ahenkro', 'Duayaw-Nkwanta'
+                                    ],
+                                    'Eastern Region' => [
+                                        'Koforidua', 'Nkawkaw', 'Mpraeso', 'Suhum', 'Akim Oda', 'Aburi',
+                                        'Asamankese', 'Akropong-Akuapem', 'Somanya', 'Akosombo', 'Nsawam'
+                                    ],
+                                    'Western Region' => [
+                                        'Takoradi', 'Sekondi', 'Tarkwa', 'Enchi', 'Sefwi-Wiawso', 'Axim'
+                                    ],
+                                    'Volta Region' => [
+                                        'Ho', 'Anloga', 'Keta', 'Hohoe', 'Kpando',
+                                        'Denu', 'Peki', 'Sogakope', 'Jasikan', 'Kadjebi'
+                                    ],
                                 ];
                             @endphp
+
         
                             @foreach($locations as $region => $towns)
                                 <div class="accordion-item mb-3">

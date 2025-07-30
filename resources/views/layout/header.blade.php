@@ -78,55 +78,58 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Read More</span>
-                            </a>
-                            <div class="dropdown-menu m-0">
-                                <a href="{{ url('/about') }}" class="dropdown-item">How to Apply</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Officer Cadets</span>
-                            </a>
-                            <div class="dropdown-menu m-0">
-                                {{-- <a href="{{ url('/who-is-officer-cadet') }}" class="dropdown-item">Who is an Officer Cadet</a> --}}
-                                <a href="{{ url('/officer-general-elegibility') }}" class="dropdown-item">General Eligibility</a>
-                                <a href="{{ url('/regular-commision') }}" class="dropdown-item">Regular Commission</a>
-                                <a href="{{ url('/short-service-commision') }}" class="dropdown-item">Short Service Commission</a>
-                                <a href="{{ url('/officer-phases') }}" class="dropdown-item">Phases</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Special Medical Intake</span>
-                            </a>
-                            <div class="dropdown-menu m-0">
-                                <a href="{{ url('/what-is-smi') }}" class="dropdown-item">What Is SMI</a>
-                                <a href="{{ url('/smi-general-elegibility') }}" class="dropdown-item">General Eligibility</a>
-                                <a href="{{ url('/smi-entry-requirement') }}" class="dropdown-item">Entry Requirement</a>
-                                <a href="{{ url('/smi-phases') }}" class="dropdown-item">Phases</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Recruits</span>
-                            </a>
-                            <div class="dropdown-menu m-0">
-                                <a href="{{ url('/who-is-a-recruit') }}" class="dropdown-item">Who is a Recruit</a>
-                                <a href="{{ url('/recruit-general-elegibility') }}" class="dropdown-item">General Eligibility</a>
-                                <a href="{{ url('/recruit-army-requirement') }}" class="dropdown-item">Army Requirement</a>
-                                <a href="{{ url('/recruit-navy-requirement') }}" class="dropdown-item">Navy Requirement</a>
-                                <a href="{{ url('/recruit-airforce-requirement') }}" class="dropdown-item">Airforce Requirement</a>
-                                <a href="{{ url('/recruit-medical-corp') }}" class="dropdown-item">Medical Corp</a>
-                                <a href="{{ url('/recruit-phases') }}" class="dropdown-item">Phases</a>
-                            </div>
-                        </div>
-                        <a href="{{ url('/card-outline') }}" class="nav-item nav-link">Card Outlet</a>
-                        <a href="{{ url('/') }}" class="nav-item nav-link">My Application</a>
-                    </div>
+    <a href="{{ url('/') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
+
+    <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle {{ Request::is('about') ? 'active' : '' }}" data-bs-toggle="dropdown">
+            Read More
+        </a>
+        <div class="dropdown-menu m-0">
+            <a href="{{ url('/about') }}" class="dropdown-item {{ Request::is('about') ? 'active' : '' }}">How to Apply</a>
+        </div>
+    </div>
+
+    <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle {{ Request::is('officer-*') ? 'active' : '' }}" data-bs-toggle="dropdown">
+            Officer Cadets
+        </a>
+        <div class="dropdown-menu m-0">
+            <a href="{{ url('/officer-general-elegibility') }}" class="dropdown-item {{ Request::is('officer-general-elegibility') ? 'active' : '' }}">General Eligibility</a>
+            <a href="{{ url('/regular-commision') }}" class="dropdown-item {{ Request::is('regular-commision') ? 'active' : '' }}">Regular Commission</a>
+            <a href="{{ url('/short-service-commision') }}" class="dropdown-item {{ Request::is('short-service-commision') ? 'active' : '' }}">Short Service Commission</a>
+            <a href="{{ url('/officer-phases') }}" class="dropdown-item {{ Request::is('officer-phases') ? 'active' : '' }}">Phases</a>
+        </div>
+    </div>
+
+    <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle {{ Request::is('smi-*') ? 'active' : '' }}" data-bs-toggle="dropdown">
+            Special Medical Intake
+        </a>
+        <div class="dropdown-menu m-0">
+            <a href="{{ url('/smi-general-elegibility') }}" class="dropdown-item {{ Request::is('smi-general-elegibility') ? 'active' : '' }}">General Eligibility</a>
+            <a href="{{ url('/smi-entry-requirement') }}" class="dropdown-item {{ Request::is('smi-entry-requirement') ? 'active' : '' }}">Entry Requirement</a>
+            <a href="{{ url('/smi-phases') }}" class="dropdown-item {{ Request::is('smi-phases') ? 'active' : '' }}">Phases</a>
+        </div>
+    </div>
+
+    <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle {{ Request::is('recruit-*') ? 'active' : '' }}" data-bs-toggle="dropdown">
+            Recruits
+        </a>
+        <div class="dropdown-menu m-0">
+            <a href="{{ url('/recruit-general-elegibility') }}" class="dropdown-item {{ Request::is('recruit-general-elegibility') ? 'active' : '' }}">General Eligibility</a>
+            <a href="{{ url('/recruit-army-requirement') }}" class="dropdown-item {{ Request::is('recruit-army-requirement') ? 'active' : '' }}">Army Requirement</a>
+            <a href="{{ url('/recruit-navy-requirement') }}" class="dropdown-item {{ Request::is('recruit-navy-requirement') ? 'active' : '' }}">Navy Requirement</a>
+            <a href="{{ url('/recruit-airforce-requirement') }}" class="dropdown-item {{ Request::is('recruit-airforce-requirement') ? 'active' : '' }}">Airforce Requirement</a>
+            <a href="{{ url('/recruit-medical-corp') }}" class="dropdown-item {{ Request::is('recruit-medical-corp') ? 'active' : '' }}">Medical Corp</a>
+            <a href="{{ url('/recruit-phases') }}" class="dropdown-item {{ Request::is('recruit-phases') ? 'active' : '' }}">Phases</a>
+        </div>
+    </div>
+
+    <a href="{{ url('/card-outline') }}" class="nav-item nav-link {{ Request::is('card-outline') ? 'active' : '' }}">Card Outlet</a>
+    <a href="{{ url('/my-application') }}" class="nav-item nav-link {{ Request::is('my-application') ? 'active' : '' }}">My Application</a>
+</div>
+
                     <a href="#" class="btn btn-danger rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Apply</a>
                 </div>
             </nav>
