@@ -4,7 +4,7 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
-                            <a href="index.html" class="p-0">
+                            <a href="{{ url('/') }}" class="p-0">
                                 <!-- <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Stocker</h4> -->
                                 <img src="logo.png" height="100px" width="100px" alt="Logo">
                             </a>
