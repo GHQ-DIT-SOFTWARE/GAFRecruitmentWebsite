@@ -127,7 +127,7 @@
     </div>
 
     <a href="{{ url('/card-outline') }}" class="nav-item nav-link {{ Request::is('card-outline') ? 'active' : '' }}">Card Outlet</a>
-    <a href="{{ url('/my-application') }}" class="nav-item nav-link {{ Request::is('my-application') ? 'active' : '' }}">My Application</a>
+    <a href="#" class="nav-item nav-link">My Application</a>
 </div>
 
                     <a href="#" class="btn btn-danger rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Apply</a>

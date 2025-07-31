@@ -20,7 +20,7 @@
         <div class="container-fluid about py-5">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
-                    <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="col-xl-12 wow fadeInLeft" data-wow-delay="0.2s">
                         <div>
                             <h1 class="display-5 mb-4">Who is an SMI?</h1>
                             <p class="mb-4">
@@ -28,33 +28,55 @@
 
                                 <br>Persons with the following expertise can apply for the SMI provided they meet all the requirements as stated in the Entry Requirements:
                                 
-                                    <br>Medical Specialist
-                                    <br>Medical Officer & Dental Surgeon
-                                    <br>Veterinary Officer
-                                    <br>General Nurse
-                                    <br>Nursing Tutor
-                                    <br>Specialized Nurses
-                                    <br>Nurse Anesthetist
-                                    <br>Biomedical Scientist
-                                    <br>Pharmacist
-                                    <br>Radiographer
-                                    <br>Dietician
-                                    <br>Physiotherapist
-                                    <br>Health Planner
-                                    <br>Biomedical Engineer
-                                    <br>Audiologist
-                                    <br>Public Health Officer
-                                    <br>Clinical Psychologist
-                                    <br>Social Psychologist
-                                    <br>Logistics Officer
-                                    <br>Health Services Administrator
-                                    <br>Physician Assistant (Medical)
+                                    <div class="container py-5">
+                                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">                                  
+
+                                          <!-- Start of Card Loop -->
+                                          @php
+                                              $roles = [
+                                                  ['icon' => 'fa-user-md', 'title' => 'Medical Specialist'],
+                                                  ['icon' => 'fa-stethoscope', 'title' => 'Medical Officer & Dental Surgeon'],
+                                                  ['icon' => 'fa-dog', 'title' => 'Veterinary Officer'],
+                                                  ['icon' => 'fa-user-nurse', 'title' => 'General Nurse'],
+                                                  ['icon' => 'fa-chalkboard-teacher', 'title' => 'Nursing Tutor'],
+                                                  ['icon' => 'fa-notes-medical', 'title' => 'Specialized Nurses'],
+                                                  ['icon' => 'fa-syringe', 'title' => 'Nurse Anesthetist'],
+                                                  ['icon' => 'fa-microscope', 'title' => 'Biomedical Scientist'],
+                                                  ['icon' => 'fa-pills', 'title' => 'Pharmacist'],
+                                                  ['icon' => 'fa-x-ray', 'title' => 'Radiographer'],
+                                                  ['icon' => 'fa-apple-alt', 'title' => 'Dietician'],
+                                                  ['icon' => 'fa-running', 'title' => 'Physiotherapist'],
+                                                  ['icon' => 'fa-chart-line', 'title' => 'Health Planner'],
+                                                  ['icon' => 'fa-cogs', 'title' => 'Biomedical Engineer'],
+                                                  ['icon' => 'fa-deaf', 'title' => 'Audiologist'],
+                                                  ['icon' => 'fa-shield-virus', 'title' => 'Public Health Officer'],
+                                                  ['icon' => 'fa-brain', 'title' => 'Clinical Psychologist'],
+                                                  ['icon' => 'fa-users', 'title' => 'Social Psychologist'],
+                                                  ['icon' => 'fa-truck-loading', 'title' => 'Logistics Officer'],
+                                                  ['icon' => 'fa-user-cog', 'title' => 'Health Services Administrator'],
+                                                  ['icon' => 'fa-user-check', 'title' => 'Physician Assistant (Medical)']
+                                              ];
+                                          @endphp                                  
+
+                                          @foreach ($roles as $role)
+                                          <div class="col">
+                                              <div class="card h-100 shadow-sm border-0">
+                                                  <div class="card-body d-flex align-items-start">
+                                                      <div class="me-3">
+                                                          <i class="fas {{ $role['icon'] }} fa-2x text-primary"></i>
+                                                      </div>
+                                                      <div>
+                                                          <h6 class="card-title mb-0">{{ $role['title'] }}</h6>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          @endforeach
+                                          <!-- End of Card Loop -->                                  
+
+                                      </div>
+                                    </div>
                             </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="bg-primary rounded position-relative overflow-hidden">
-                            <img src="SELECTED PICTURES/r10.jpg" class="img-fluid rounded w-100" alt="">
                         </div>
                     </div>
                 </div>

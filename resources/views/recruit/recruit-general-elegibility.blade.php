@@ -16,45 +16,58 @@
         <!-- Navbar & Hero End -->
 
 
-        <!-- Abvout Start -->
-        <div class="container-fluid about py-5">
+        <!-- About Start -->
+        <div class="container-fluid py-5 bg-light">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
+                    <!-- Text Content -->
                     <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                         <div>
-                            <h1 class="display-5 mb-4">Who is a Recruit?</h1>
-                            <p class="mb-4">
-                                	A recruit is a person undergoing basic military training to become a soldier. Recruit training in the Ghana Armed Forces is within the period of six(6) months. The training is a physically and psychologically intensive process, which resocializes its subjects for the demands of military employment.
-
-                                    <br>The recruits are grouped according to the 3 Arms of Services of the Ghana Armed Forces:
-                                    <br>
-                                    <br>    Army
-                                    <br>    Navy
-                                    <br>    Airforce
-                                    <br>
-                                    <br>Recruit training comprises of the following:
-                                    <br>
-                                    <br>    Physical Training
-                                    <br>    Drill
-                                    <br>    Skill at Arms
-                                    <br>    Navigation
-                                    <br>    Watermanship
-                                    <br>    Military Tactics
-                                    <br>    Field Craft
-                                    <br>    Voice Procedure
-
+                            <h2 class="mb-4 text-dark fw-bold border-bottom pb-2">Who is a Recruit?</h2>
+                            <p class="lead text-secondary">
+                                A <strong>recruit</strong> is an individual undergoing basic military training to become a soldier. Recruit training in the Ghana Armed Forces spans <strong>six (6) months</strong> and is both physically and psychologically intensive, aimed at transforming civilians into disciplined and mission-ready personnel.
                             </p>
+        
+                            <h5 class="mt-4 fw-semibold">Arms of Service:</h5>
+                            <ul class="list-unstyled ps-3">
+                                <li><i class="fas fa-chevron-right text-primary me-2"></i> Army</li>
+                                <li><i class="fas fa-chevron-right text-primary me-2"></i> Navy</li>
+                                <li><i class="fas fa-chevron-right text-primary me-2"></i> Air Force</li>
+                            </ul>
+        
+                            <h5 class="mt-4 fw-semibold">Recruit Training Covers:</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled ps-3">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Physical Training</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Drill</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Skill at Arms</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Navigation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled ps-3">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Watermanship</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Military Tactics</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Field Craft</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Voice Procedure</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+        
+                    <!-- Image Section -->
                     <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="bg-primary rounded position-relative overflow-hidden">
-                            <img src="SELECTED PICTURES/r10.jpg" class="img-fluid rounded w-100" alt="">
+                        <div class="rounded shadow overflow-hidden border border-2 border-primary">
+                            <img src="SELECTED PICTURES/r10.jpg" class="img-fluid w-100" alt="Recruit Training Image">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- About End -->
+
 
 
         <!-- Abvout Start -->

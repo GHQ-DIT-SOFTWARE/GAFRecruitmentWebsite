@@ -98,10 +98,11 @@
                     <!-- Ghana Map -->
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="rounded h-100">
-                            <iframe class="rounded w-100 h-100" style="min-height: 600px;"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4046783.8148070388!2d-3.672857182493536!3d7.901617610971971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd75acda8dad6c7%3A0x54d7f230d093d236!2sGhana!5e0!3m2!1sen!2sgh!4v1753883327896!5m2!1sen!2sgh" 
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                            <!-- Ghana Map -->
+                            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                                <div id="ghanaMap" class="rounded w-170 h-100" style="min-height: 700px;"></div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -109,6 +110,43 @@
         </div>
         <!-- Contact End -->
 
-        <!-- Contact End -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_Bk3tFVjjrdsT-wIj8xVM0IDCrYhNcTA&callback=initMap" async defer></script>
+
+        <script>
+    function initMap() {
+        const map = new google.maps.Map(document.getElementById("ghanaMap"), {
+            zoom: 6.5,
+            center: { lat: 7.9465, lng: -1.0232 }, // Center of Ghana
+        });
+
+        const locations = [
+            { name: "Burma Camp", lat: 5.5656, lng: -0.1647 },
+            { name: "Cape Coast", lat: 5.1053, lng: -1.2466 },
+            { name: "Tamale", lat: 9.4071, lng: -0.8539 },
+            { name: "Wa", lat: 10.0607, lng: -2.5019 },
+            { name: "Bolgatanga", lat: 10.7852, lng: -0.8514 },
+            { name: "Kumasi Main", lat: 6.6885, lng: -1.6244 },
+            { name: "Sunyani", lat: 7.3395, lng: -2.3268 },
+            { name: "Koforidua", lat: 6.0941, lng: -0.2591 },
+            { name: "Takoradi", lat: 4.8961, lng: -1.7594 },
+            { name: "Ho", lat: 6.6008, lng: 0.4713 },
+            { name: "Tema Community 1", lat: 5.6694, lng: -0.0166 },
+            { name: "New Achimota", lat: 5.6077, lng: -0.2325 },
+            { name: "Ministries", lat: 5.5560, lng: -0.1989 },
+            { name: "Elmina", lat: 5.0847, lng: -1.3509 },
+            { name: "Bawku", lat: 11.0601, lng: -0.2417 },
+            { name: "Sogakope", lat: 5.9981, lng: 0.6001 },
+        ];
+
+        locations.forEach(loc => {
+            const marker = new google.maps.Marker({
+                position: { lat: loc.lat, lng: loc.lng },
+                map,
+                title: loc.name,
+            });
+        });
+    }
+</script>
+
 
        @include('layout.footer');
