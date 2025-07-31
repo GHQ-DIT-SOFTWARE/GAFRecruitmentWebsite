@@ -99,12 +99,10 @@
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="rounded h-100">
                             <!-- Ghana Map -->
-                            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                                <div id="ghanaMap" class="rounded w-170 h-100" style="min-height: 700px;"></div>
-                            </div>
-
+                            <div id="ghanaMap" class="rounded w-100 h-100" style="min-height: 700px;"></div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

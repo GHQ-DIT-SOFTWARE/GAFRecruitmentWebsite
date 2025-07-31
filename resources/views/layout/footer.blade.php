@@ -5,7 +5,6 @@
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
                             <a href="{{ url('/') }}" class="p-0">
-                                <!-- <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Stocker</h4> -->
                                 <img src="logo.png" height="100px" width="100px" alt="Logo">
                             </a>
                             <p class="mb-4">GAF Recruitment</p>
@@ -14,19 +13,19 @@
                     <div class="col-md-6 col-lg-6 col-xl-2">
                         <div class="footer-item">
                             <h4 class="text-white mb-4">Quick Links</h4>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Gaf Online</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Army</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Navy</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Airforce</a>
+                            <a href="https://gafonline.mil.gh/"><i class="fas fa-angle-right me-2"></i> Gaf Online</a>
+                            <a href="https://ga.mil.gh/"><i class="fas fa-angle-right me-2"></i> Army</a>
+                            <a href="https://navyonline.mil.gh/"><i class="fas fa-angle-right me-2"></i> Navy</a>
+                            <a href="https://af.mil.gh/"><i class="fas fa-angle-right me-2"></i> Airforce</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item">
                             <h4 class="text-white mb-4">Support</h4>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> How to Apply</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Officer Cadet Requirements</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> SMI Requirements</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Recuit Requirements</a>
+                            <a href="{{ url('/about') }}"><i class="fas fa-angle-right me-2"></i> How to Apply</a>
+                            <a href="{{ url('/officer-general-elegibility') }}"><i class="fas fa-angle-right me-2"></i> Officer Cadet Requirements</a>
+                            <a href="{{ url('/smi-general-elegibility') }}"><i class="fas fa-angle-right me-2"></i> SMI Requirements</a>
+                            <a href="{{ url('/recruit-general-elegibility') }}"><i class="fas fa-angle-right me-2"></i> Recuit Requirements</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">

@@ -4,7 +4,7 @@
             <div class="header-carousel owl-carousel">
                 <!-- Slide 1 -->
                 <div class="header-carousel-item">
-                    <img src="SELECTED PICTURES/lele.png" class="img-fluid w-100" alt="Image">
+                    <img src="SELECTED PICTURES/_DSC1487.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row gy-0 gx-5 align-items-center">
@@ -25,7 +25,70 @@
             
                 <!-- Slide 2 -->
                 <div class="header-carousel-item">
-                    <img src="SELECTED PICTURES/asa1-max.jpg" class="img-fluid w-100" alt="Image">
+                    <img src="SELECTED PICTURES/r13.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-7 col-lg-8 animated fadeInLeft">
+                                    <div class="text-start">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome to</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">GAF Recruitment</h1>
+                                        <div class="d-flex justify-content-start flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="{{ url('/about') }}">Learn More</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Apply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="header-carousel-item">
+                    <img src="SELECTED PICTURES/DSC_5284.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-7 col-lg-8 animated fadeInLeft">
+                                    <div class="text-start">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome to</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">GAF Recruitment</h1>
+                                        <div class="d-flex justify-content-start flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="{{ url('/about') }}">Learn More</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Apply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="header-carousel-item">
+                    <img src="SELECTED PICTURES/22A0168.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-7 col-lg-8 animated fadeInLeft">
+                                    <div class="text-start">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome to</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">GAF Recruitment</h1>
+                                        <div class="d-flex justify-content-start flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="{{ url('/about') }}">Learn More</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Apply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="header-carousel-item">
+                    <img src="SELECTED PICTURES/_MG_1867.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row align-items-center">
@@ -83,7 +146,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="feature-item p-4">
                             <div class="feature-icon p-4 mb-4">
-                                <i class="fas fa-book-open fa-4x text-black"></i>
+                                <i class="fas fa-book-open fa-1x text-black"></i>
                             </div>
                             <h4>STEP 1</h4>
                             <p class="mb-4">All applicants are required to carefully read through the entry requirements for better understanding before applying. Take note of all required data in the subsequent steps.</p>
@@ -93,7 +156,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="feature-item p-4">
                             <div class="feature-icon p-4 mb-4">
-                                <i class="fas fa-file-signature fa-4x text-black"></i>
+                                <i class="fas fa-file-signature fa-1x text-black"></i>
                             </div>
                             <h4>STEP 2</h4>
                             <p class="mb-4">Click on the Apply Now tab and fill in your scratch card serial and pincode details. Select your Arm of Service and highest educational level then click on the SUBMIT button.</p>
@@ -103,7 +166,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="feature-item p-4">
                             <div class="feature-icon p-4 mb-4">
-                                <i class="fas fa-user-edit fa-4x text-black"></i>
+                                <i class="fas fa-user-edit fa-1x text-black"></i>
                             </div>
                             <h4>STEP 3</h4>
                             <p class="mb-4">You are to select your preferred branch and enter your Bio Data details, Educational details as well as upload a passport sized picture of dimension (200x180) pixels before submitting </p>
@@ -113,7 +176,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="feature-item p-4">
                             <div class="feature-icon p-4 mb-4">
-                                <i class="fas fa-print fa-4x text-black"></i>
+                                <i class="fas fa-print fa-1x text-black"></i>
                             </div>
                             <h4>STEP 4</h4>
                             <p class="mb-4">Finally Print out a copy of the application summary report, which contains details of your Applicantion Identification Number (GAF ID Number) and other relevant data.</p>
@@ -265,7 +328,7 @@
         <div class="container-fluid team pb-5">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h1 class="display-7 mb-4">Service Portals</h1>
+                    <h1 class="display-10 mb-4">Service Portals</h1>
                     </p>
                 </div>
                 <div class="row g-4">
@@ -275,7 +338,7 @@
                                 <img src="logo.png" class="img-fluid" alt="">
                             </div>
                             <div class="team-title">
-                                <h4 class="mb-0">GHQ</h4>
+                                <h4 class="mb-0"><a href="https://gafonline.mil.gh/">GHQ</a></h4>
                                 <p class="mb-0">The General Headquarters is the central command of the Ghana Armed Forces...</p>
                             </div>
                         </div>
@@ -287,7 +350,7 @@
                                 <img src="Army_011 (1).png" class="img-fluid" alt="">
                             </div>
                             <div class="team-title">
-                                <h4 class="mb-0">Army</h4>
+                                <h4 class="mb-0"><a href="https://ga.mil.gh/">Army</a></h4>
                                 <p class="mb-0">The Army is the land warfare branch of the Armed Forces. It is responsible...</p>
                             </div>
                         </div>
@@ -299,7 +362,7 @@
                                 <img src="Navy 1.png" class="img-fluid" alt="">
                             </div>
                             <div class="team-title">
-                                <h4 class="mb-0">Navy</h4>
+                                <h4 class="mb-0"><a href="https://navyonline.mil.gh/">Navy</a></h4>
                                 <p class="mb-0">The Navy safeguards Ghana’s maritime domain. It conducts sea patrols, anti-piracy...</p>
                             </div>
                         </div>
@@ -311,7 +374,7 @@
                                 <img src="Army_011 (2).png" class="img-fluid" alt="">
                             </div>
                             <div class="team-title">
-                                <h4 class="mb-0">Airforce</h4>
+                                <h4 class="mb-0"><a href="https://af.mil.gh/">Airforce</a></h4>
                                 <p class="mb-0">The Air Force provides aerial defense and support operations. It offers air transport...</p>
                             </div>
                         </div>
@@ -327,7 +390,7 @@
         <div class="container-fluid faq-section pb-5">
             <div class="container pb-5 overflow-hidden">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h1 class="display-7 mb-4">Frequently Asked Questions</h1>
+                    <h1 class="display-10 mb-4">Frequently Asked Questions</h1>
                     </p>
                 </div>
                 <div class="row g-5 align-items-center">
