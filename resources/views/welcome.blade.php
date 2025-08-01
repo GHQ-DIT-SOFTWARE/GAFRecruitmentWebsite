@@ -1,5 +1,28 @@
 @include('layout.header')
 
+<link rel="stylesheet" href="assets/css/plugins/flipclock.css">
+
+<style>
+    /* Reduce or remove overlay background */
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.2) !important; /* lower opacity */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* Optionally: add text shadow to improve visibility */
+    .carousel-caption h1,
+    .carousel-caption h4 {
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Optional: if there's default blur or dark filter, reset it */
+    .header-carousel-item img {
+        filter: brightness(1.2) !important; /* brighten image */
+    }
+</style>
+
+
             <!-- Carousel Start -->
             <div class="header-carousel owl-carousel">
                 <!-- Slide 1 -->
@@ -46,7 +69,7 @@
 
                 <!-- Slide 3 -->
                 <div class="header-carousel-item">
-                    <img src="SELECTED PICTURES/DSC_5284.jpg" class="img-fluid w-100" alt="Image">
+                    <img src="SELECTED PICTURES/DSC_6214.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row align-items-center">
@@ -111,6 +134,55 @@
             <!-- Carousel End -->
         </div>
         <!-- Navbar & Hero End -->
+
+        <style>
+/* Slide in effect */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.6s ease-out;
+}
+
+.slide-in.visible {
+  animation: slideInUp 0.8s forwards;
+}
+
+/* Stagger delay using nth-child */
+.row.g-4 > div:nth-child(1).visible { animation-delay: 0.2s; }
+.row.g-4 > div:nth-child(2).visible { animation-delay: 0.4s; }
+.row.g-4 > div:nth-child(3).visible { animation-delay: 0.6s; }
+.row.g-4 > div:nth-child(4).visible { animation-delay: 0.8s; }
+</style>
+
+
+<div class="row">
+                <div class="col-lg-12">
+                    <div class="card bg-pattern">
+                        <div class="card-body py-5 text-center">
+                            <h2 class="display-10 mb-4 styled-underline"><span class="text-primary">Join the Military</h2>
+                            <h4 class="text-center mb-4">Recruitment opens in</h4>
+                            <div class="clock d-inline-block" style="margin:2em;"></div>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-9">
+                                    <a href="{{ url('/card-outline') }}"><button class="btn btn-primary mb-2">Checkout Card Outlets</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
         <!-- Abvout Start -->
@@ -321,6 +393,31 @@
                 color: inherit;
             }
 
+            .styled-underline {
+                display: inline-block;
+                position: relative;
+                font-size: 1.8rem;
+                color: #d49120; /* optional: primary text color */
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline::after {
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 4px;
+                left: 20%;
+                bottom: -8px;
+                background-color: #d49120; /* Bootstrap Primary */
+                border-radius: 2px;
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline:hover::after {
+                width: 100%;
+                left: 0;
+            }
+
         </style>
 
 
@@ -328,7 +425,7 @@
         <div class="container-fluid team pb-5">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h1 class="display-10 mb-4">Service Portals</h1>
+                    <h2 class="display-10 mb-4 styled-underline">Service Portals</h2>
                     </p>
                 </div>
                 <div class="row g-4">
@@ -385,12 +482,15 @@
         </div>
         <!-- Portal End -->
 
+        <style>
+
+        </style>
 
          <!-- FAQs Start -->
         <div class="container-fluid faq-section pb-5">
             <div class="container pb-5 overflow-hidden">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h1 class="display-10 mb-4">Frequently Asked Questions</h1>
+                    <h2 class="display-10 mb-4 styled-underline">Frequently Asked Questions</h2>
                     </p>
                 </div>
                 <div class="row g-5 align-items-center">
@@ -473,6 +573,43 @@
             </div>
         </div>
         <!-- FAQs End -->
+
+
+        
+            <script src="assets/js/vendor-all.min.js"></script>
+        <script src="assets/js/plugins/bootstrap.min.js"></script>
+        <script src="assets/js/ripple.js"></script>
+        <script src="assets/js/pcoded.min.js"></script>
+            <script src="flipclock.min.js"></script>
+    <script>
+        // [ flipclock ] start
+        $(function() {
+            var d = new Date();
+            d.setMonth(d.getMonth() + 2);
+            var el = document.querySelector('.clock');
+            var clock = new FlipClock(el, d, {
+                face: 'DayCounter',
+                countdown: true
+            });
+        });
+        // [ flipclock ] end
+        // [ progressbar ] start
+        $(function() {
+            setInterval(function() {
+                $('.active-progress').css('width', '8%');
+                setTimeout(function() {
+                    $('.active-progress').css('width', '16.6%');
+                }, 2000);
+                setTimeout(function() {
+                    $('.active-progress').css('width', '12%');
+                }, 4000);
+                setTimeout(function() {
+                    $('.active-progress').css('width', '0%');
+                }, 5000);
+            }, 5400);
+        });
+        // [ progressbar ] end
+    </script>
 
 
       @include('layout.footer')

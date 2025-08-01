@@ -1,5 +1,32 @@
 @include('layout.header')
 
+<style>
+    .styled-underline {
+                display: inline-block;
+                position: relative;
+                font-size: 1.8rem;
+                color: #d49120; /* optional: primary text color */
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline::after {
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 4px;
+                left: 20%;
+                bottom: -8px;
+                background-color: #d49120; /* Bootstrap Primary */
+                border-radius: 2px;
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline:hover::after {
+                width: 100%;
+                left: 0;
+            }
+</style>
+
 <!-- Header Start -->
 <div class="container-fluid bg-breadcrumb">
     <div class="container text-center py-5" style="max-width: 900px;">
@@ -17,7 +44,7 @@
     <div class="container py-5">
         <div class="row g-5 align-items-start">
             <div class="col-xl-12 wow fadeInLeft" data-wow-delay="0.2s">
-                <h1 class="display-5 mb-4">Navy Recruitment</h1>
+                <h1 class="display-10 mb-4 styled-underline">Navy Recruitment</h1>
 
                 <!-- Tabs Navigation -->
                 <ul class="nav nav-tabs mb-4" id="navyTabs" role="tablist">
@@ -78,7 +105,7 @@
                         </ul>
 
                         <p><strong>Electrical & Weapon Artificers</strong></p>
-                        <p><strong>Shipwrights</strong>, <strong>Radio Artificers</strong>, <strong>Technicians</strong>... continue similarly</p>
+                        <p><strong>Shipwrights</strong>, <strong>Radio Artificers</strong>, <strong>Technicians</strong></p>
                     </div>
 
                     <!-- Physical Training -->

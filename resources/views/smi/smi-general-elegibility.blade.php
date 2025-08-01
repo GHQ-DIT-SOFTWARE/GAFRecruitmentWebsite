@@ -1,10 +1,36 @@
 @include('layout.header')
 
+<style>
+    .styled-underline {
+                display: inline-block;
+                position: relative;
+                font-size: 1.8rem;
+                color: #d49120; /* optional: primary text color */
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline::after {
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 4px;
+                left: 20%;
+                bottom: -8px;
+                background-color: #d49120; /* Bootstrap Primary */
+                border-radius: 2px;
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline:hover::after {
+                width: 100%;
+                left: 0;
+            }
+</style>
 
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb">
                 <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">SMI General Elegibility</h4>
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">SMI - Special Medical Intake</h4>
                     <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                         <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
                         <li class="breadcrumb-item active text-primary">SMI General Elegibility</li>
@@ -22,7 +48,7 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-xl-12 wow fadeInLeft" data-wow-delay="0.2s">
                         <div>
-                            <h1 class="display-5 mb-4">Who is an SMI?</h1>
+                            <h2 class="display-10 mb-4 styled-underline">Who is an SMI?</h2>
                             <p class="mb-4">
                                 SMI means Special Medical Intake
 
@@ -91,12 +117,12 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="bg-primary rounded position-relative overflow-hidden">
-                            <img src="SELECTED PICTURES/r11.jpg" class="img-fluid rounded w-100" alt="">
+                            <img src="SELECTED PICTURES/_DSC1506.jpg" class="img-fluid rounded w-100" alt="">
                         </div>
                     </div>
                     <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                         <div>
-                            <h1 class="display-5 mb-4">General Elegibility</h1>
+                            <h2 class="display-10 mb-4 styled-underline">General Elegibility</h2>
                             <p class="mb-4">
                                 Eligible applicant should:
 

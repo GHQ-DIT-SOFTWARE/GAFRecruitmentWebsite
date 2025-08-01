@@ -1,4 +1,30 @@
 @include('layout.header')
+<style>
+    .styled-underline {
+                display: inline-block;
+                position: relative;
+                font-size: 1.8rem;
+                color: #d49120; /* optional: primary text color */
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline::after {
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 4px;
+                left: 20%;
+                bottom: -8px;
+                background-color: #d49120; /* Bootstrap Primary */
+                border-radius: 2px;
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline:hover::after {
+                width: 100%;
+                left: 0;
+            }
+</style>
 
 
             <!-- Header Start -->
@@ -23,7 +49,7 @@
                     <!-- Text Content -->
                     <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                         <div>
-                            <h2 class="mb-4 text-dark fw-bold border-bottom pb-2">Who is a Recruit?</h2>
+                            <h2 class="display-10 mb-4 styled-underline">Who is a Recruit?</h2>
                             <p class="lead text-secondary">
                                 A <strong>recruit</strong> is an individual undergoing basic military training to become a soldier. Recruit training in the Ghana Armed Forces spans <strong>six (6) months</strong> and is both physically and psychologically intensive, aimed at transforming civilians into disciplined and mission-ready personnel.
                             </p>
@@ -60,7 +86,7 @@
                     <!-- Image Section -->
                     <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="rounded shadow overflow-hidden border border-2 border-primary">
-                            <img src="SELECTED PICTURES/r10.jpg" class="img-fluid w-100" alt="Recruit Training Image">
+                            <img src="SELECTED PICTURES/DSC_6214.jpg" class="img-fluid w-100" alt="Recruit Training Image">
                         </div>
                     </div>
                 </div>
@@ -76,12 +102,12 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="bg-primary rounded position-relative overflow-hidden">
-                            <img src="SELECTED PICTURES/r11.jpg" class="img-fluid rounded w-100" alt="">
+                            <img src="SELECTED PICTURES/523D4389.jpg" class="img-fluid rounded w-100" alt="">
                         </div>
                     </div>
                     <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                         <div>
-                            <h1 class="display-5 mb-4">General Elegibility</h1>
+                            <h1 class="display-10 mb-4 styled-underline">General Elegibility</h1>
                             <p class="mb-4">
                                 Eligible applicant must:
 

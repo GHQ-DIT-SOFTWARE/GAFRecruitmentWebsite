@@ -1,12 +1,39 @@
 @include('layout.header')
 
+<style>
+    .styled-underline {
+                display: inline-block;
+                position: relative;
+                font-size: 1.8rem;
+                color: #d49120; /* optional: primary text color */
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline::after {
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 4px;
+                left: 20%;
+                bottom: -8px;
+                background-color: #d49120; /* Bootstrap Primary */
+                border-radius: 2px;
+                transition: all 0.3s ease;
+            }
+        
+            .styled-underline:hover::after {
+                width: 100%;
+                left: 0;
+            }
+</style>
+
 <!-- Header Start -->
 <div class="container-fluid bg-breadcrumb">
     <div class="container text-center py-5" style="max-width: 900px;">
-        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Officer Regular Commission</h4>
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Regular Commission</h4>
         <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
             <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-            <li class="breadcrumb-item active text-primary">Officer Regular Commission</li>
+            <li class="breadcrumb-item active text-primary">Regular Commission</li>
         </ol>    
     </div>
 </div>
@@ -16,7 +43,7 @@
 <div class="container-fluid about py-5">
     <div class="container py-5">
         <div class="text-center mb-5 wow fadeInUp">
-            <h1 class="display-5">Army Branches & Qualifications</h1>
+            <h2 class="display-10 mb-4 styled-underline">Regular Commission</h2>
             <p>All applicants must meet general eligibility and possess the following academic qualifications specific to each corps.</p>
         </div>
 
@@ -24,19 +51,9 @@
         <ul class="nav nav-tabs mb-4 justify-content-center" id="armyTab" role="tablist">
             @php
                 $tabs = [
-                    'infantry' => 'Infantry/Armour/Artillery/MP',
-                    'signal' => 'Signal Corps',
-                    'engineer' => 'Engineer Corps',
-                    'eme' => 'EME Corps',
-                    'ordnance' => 'Ordnance Service',
-                    'supply' => 'Supply & Transport',
-                    'pay' => 'Forces Pay Corps',
-                    'it' => 'Information Technology',
-                    'education' => 'Education Corps',
-                    'pr' => 'Public Relations',
-                    'pt' => 'Physical Training',
-                    'band' => 'Band',
-                    'records' => 'Records Office',
+                    'army' => 'Army',
+                    'navy' => 'Navy',
+                    'airforce' => 'Airforce',
                 ];
             @endphp
             @foreach ($tabs as $key => $label)
@@ -50,368 +67,185 @@
 
         <!-- Tabs Content -->
         <div class="tab-content" id="armyTabContent">
-            <div class="tab-pane fade show active" id="infantry" role="tabpanel">
-                <h4>Infantry, Armour, Artillery, Military Police</h4>
-                <p>In addition to general eligibility, applicants must have a First Degree from a recognized university.</p>
-            </div>
+            <div class="tab-pane fade show active" id="army" role="tabpanel">
+    <div class="mx-auto" style="max-width: 900px; text-align: justify;">
+        <h4 class="text-center mb-4">Army</h4>
+        <p>
+            Infantry/Armour/Artillery/Military Police. In addition to the general eligibility, applicants must have a First Degree from a recognized University.<br><br>
 
-            <div class="tab-pane fade" id="signal" role="tabpanel">
-                <h4>Signal Corps</h4>
-                <p>Applicants must have a First Degree (Second Class Lower or better) in:
-                    <ul>
-                        <li>Telecommunication Engineering</li>
-                        <li>Computer Engineering</li>
-                        <li>Electronics Engineering</li>
-                        <li>Physics</li>
-                        <li>Mathematics</li>
-                    </ul>
-                </p>
-            </div>
+            <strong>Signal Corps.</strong> In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower from a recognized University in any of the following:<br>
+            (1) Telecommunication Engineering.<br>
+            (2) Computer Engineering.<br>
+            (3) Electronics Engineering.<br>
+            (4) Physics.<br>
+            (5) Mathematics.<br><br>
 
-            <div class="tab-pane fade" id="engineer" role="tabpanel">
-                <h4>Engineer Corps</h4>
-                <ul>
-                    <li>Civil Engineering (Structural or Water/Sanitation)</li>
-                    <li>Electrical Engineering</li>
-                    <li>Mechanical Engineering with Building Services</li>
-                    <li>Building Technology</li>
-                    <li>Construction Management</li>
-                    <li>Geomatic Engineering</li>
-                    <li>Geological Engineering</li>
-                </ul>
-            </div>
+            <strong>Engineer Corps</strong> In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower from a recognized University in any of the following:<br>
+            (1) Civil Engineering (Structural or Water/Sanitation Engineer).<br>
+            (2) Electrical Engineering.<br>
+            (3) Mechanical Engineer with Building Service Option.<br>
+            (4) Building Technology.<br>
+            (5) Construction Management.<br>
+            (6) Geomatic Engineer.<br>
+            (7) Geological Engineer.<br><br>
 
-            <div class="tab-pane fade" id="eme" role="tabpanel">
-                <h4>Electrical and Mechanical Engineers (EME Corps)</h4>
-                <ul>
-                    <li>Physics</li>
-                    <li>Mechanical Engineering</li>
-                    <li>BTech (Automobile)</li>
-                    <li>Electrical or Electronics Engineering</li>
-                    <li>Material Engineering</li>
-                    <li>Chemistry</li>
-                    <li>Agricultural Engineering</li>
-                    <li>Mathematics</li>
-                </ul>
-            </div>
+            <strong>Electrical and Mechanical Engineers (EME Corps).</strong> In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower from a recognized University/Institution in any of the following:<br>
+            (1) Physics.<br>
+            (2) Mechanical Engineering.<br>
+            (3) BTech (Automobile).<br>
+            (4) Electrical Engineering.<br>
+            (5) Electronics Engineering.<br>
+            (6) Materiel Engineering.<br>
+            (7) Chemistry.<br>
+            (8) Agricultural Engineering.<br>
+            (9) Mathematics.<br><br>
 
-            <div class="tab-pane fade" id="ordnance" role="tabpanel">
-                <h4>Ordnance Service</h4>
-                <ul>
-                    <li>Chemistry / Biochemistry</li>
-                    <li>Logistics and Supply Chain Management</li>
-                    <li>Procurement and Supply Chain Management</li>
-                    <li>Economics</li>
-                    <li>Publishing</li>
-                </ul>
-            </div>
+            <strong>Ordnance Service.</strong> In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower from a recognized University/Institution in:<br>
+            (1) Chemistry/Biochemistry.<br>
+            (2) Logistics and Supply Chain Mgt.<br>
+            (3) Procurement and Supply Chain Mgt.<br>
+            (4) Economics.<br>
+            (5) Publishing.<br><br>
 
-            <div class="tab-pane fade" id="supply" role="tabpanel">
-                <h4>Supply and Transport Corps</h4>
-                <ul>
-                    <li>Logistics & Supply Chain Management</li>
-                    <li>Administration</li>
-                    <li>Port & Shipping Administration</li>
-                    <li>Management Studies / Commerce</li>
-                    <li>Procurement and Supply Chain Management</li>
-                    <li>Economics</li>
-                </ul>
-            </div>
+            <strong>Supply and Transport Corps.</strong> In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower from a recognized University/Institution in:<br>
+            (1) Logistics and Supply Chain Management.<br>
+            (2) Administration.<br>
+            (3) Port and Shipping Administration.<br>
+            (4) Management Studies/Commerce.<br>
+            (5) Procurement and Supply Chain Management.<br>
+            (6) Economics.<br><br>
 
-            <div class="tab-pane fade" id="pay" role="tabpanel">
-                <h4>Forces Pay Corps</h4>
-                <p>Applicants must have a First Degree in Accounting (Second Class Lower or better).</p>
-            </div>
+            <strong>Forces Pay Corps.</strong> Applicants must have a First Degree in Accounting not below Second Class Lower from a recognized University/Institution.<br><br>
 
-            <div class="tab-pane fade" id="it" role="tabpanel">
-                <h4>Information Technology</h4>
-                <ul>
-                    <li>Computer Science</li>
-                    <li>Computer Engineering</li>
-                    <li>Information Technology</li>
-                    <li>Computer Security</li>
-                    <li>Network Engineering</li>
-                </ul>
-            </div>
+            <strong>Information Technology.</strong> Applicants must have a First Degree not below Second Class Lower in:<br>
+            (1) Computer Science.<br>
+            (2) Computer Engineering.<br>
+            (3) Information Technology.<br>
+            (4) Computer Security.<br>
+            (5) Network Engineering.<br><br>
 
-            <div class="tab-pane fade" id="education" role="tabpanel">
-                <h4>Education Corps</h4>
-                <ul>
-                    <li>Education</li>
-                    <li>Librarianship</li>
-                </ul>
-            </div>
+            <strong>Education Corps.</strong> First Degree not below Second Class Lower in:<br>
+            (1) Education.<br>
+            (2) Librarianship.<br><br>
 
-            <div class="tab-pane fade" id="pr" role="tabpanel">
-                <h4>Public Relations</h4>
-                <ul>
-                    <li>Communication</li>
-                    <li>Public Relations</li>
-                    <li>Fine Arts (NAFTI)</li>
-                    <li>Journalism</li>
-                </ul>
-            </div>
+            <strong>Public Relations.</strong> Applicants must have a First Degree (BA, BFA, BSc, etc.) not below Second Class Lower in:<br>
+            (1) Communication.<br>
+            (2) Public Relations.<br>
+            (3) Fine Arts (NAFTI).<br>
+            (4) Journalism.<br><br>
 
-            <div class="tab-pane fade" id="pt" role="tabpanel">
-                <h4>Physical Training & Sports</h4>
-                <p>Applicants must hold a First Degree in Physical Education.</p>
-            </div>
+            <strong>Physical Training (PT) and Sports.</strong> First Degree not below Second Class Lower in Physical Education from a recognized University/Institution.<br><br>
 
-            <div class="tab-pane fade" id="band" role="tabpanel">
-                <h4>Band</h4>
-                <p>Applicants must hold a First Degree in Music (Second Class Lower or better).</p>
-            </div>
+            <strong>Band.</strong> First Degree not below Second Class Lower in Music from a recognized University/Institution.<br><br>
 
-            <div class="tab-pane fade" id="records" role="tabpanel">
-                <h4>Records Office</h4>
-                <ul>
-                    <li>Actuarial Science</li>
-                    <li>Administration</li>
-                    <li>Statistics</li>
-                    <li>Management Information Systems</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Right-side image stack -->
-        {{-- <div class="row mt-5">
-            <div class="col-lg-12 text-center">
-                <h5 class="mb-3">GAF Army Training in Pictures</h5>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <img src="Army_011 (1).png" class="img-fluid rounded" style="max-width: 200px;" alt="">
-                    <img src="SELECTED PICTURES/r11.jpg" class="img-fluid rounded" style="max-width: 280px;" alt="">
-                    <img src="SELECTED PICTURES/r10.jpg" class="img-fluid rounded" style="max-width: 280px;" alt="">
-                    <img src="SELECTED PICTURES/r9.jpg" class="img-fluid rounded" style="max-width: 280px;" alt="">
-                </div>
-            </div>
-        </div> --}}
+            <strong>Records.</strong> First Degree not below Second Class Lower in:<br>
+            (1) Actuarial Science.<br>
+            (2) Administration.<br>
+            (3) Statistics.<br>
+            (4) Management Information Studies.<br>
+        </p>
     </div>
 </div>
 
 
-<!-- Navy Start -->
-<div class="container-fluid about py-5 bg-light">
-    <div class="container py-5">
-        <h1 class="display-5 mb-4 text-center">Navy</h1>
+            <div class="tab-pane fade" id="navy" role="tabpanel">
+    <div class="mx-auto" style="max-width: 900px; text-align: justify;">
+        <h4 class="text-center mb-4">Navy</h4>
+        <p>
+            <strong>Executive Branch.</strong> In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in any of the following from a recognized University/Institution:<br>
+            (1) Nautical Science.<br>
+            (2) Mathematics, Physics, Geography, Statistics.<br>
+            (3) Computer Science.<br>
+            (4) Oceanography or Geomatic Engineering.<br><br>
 
-        <!-- Tabs Navigation -->
-        <ul class="nav nav-tabs mb-4 justify-content-center" id="navyTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="executive-tab" data-bs-toggle="tab" data-bs-target="#executive"
-                    type="button" role="tab">Executive Branch</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="technical-tab" data-bs-toggle="tab" data-bs-target="#technical"
-                    type="button" role="tab">Technical Branch</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="supply-tab" data-bs-toggle="tab" data-bs-target="#supply"
-                    type="button" role="tab">Supply & Secretarial Branch</button>
-            </li>
+            <strong>Technical Branch.</strong> In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in any of the following from a recognized University/Institution:<br>
+            (1) Marine Engineering.<br>
+            (2) Mechanical Engineering.<br>
+            (3) Electrical Engineering.<br>
+            (4) Marine Electrical/Electronic Engineering.<br><br>
+
+            <strong>Supply and Secretarial Branch.</strong> In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower from a recognized University or equivalent Professional Institution in any of the following:<br>
+            (1) Administration (HR/Accounting/Marketing/Banking & Finance).<br>
+            (2) Logistics and Supply Chain Management.<br>
+            (3) Port and Shipment Administration.<br>
+            (4) Management Studies.<br>
+            (5) Procurement and Supply Chain Management.<br>
+            (6) Economics.<br><br>
+
+            <strong>Preference will be given to applicants with additional certificates in the following:</strong><br>
+            (a) Institute of Chartered Secretaries & Administration (ICSA) – Final Part.<br>
+            (b) Chartered Institute of Purchasing and Supply (CIPS) – Level 5.<br>
+            (c) Chartered Institute of Logistics and Transport (CILT) – Final Part.<br>
+        </p>
+    </div>
+</div>
+
+
+            <div class="tab-pane fade" id="airforce" role="tabpanel">
+    <div class="mx-auto" style="max-width: 900px; text-align: justify;">
+        <h4 class="text-center mb-4">Air Force</h4>
+        <p>
+            <strong>Pilots / ATC Operations.</strong><br>
+            In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in any of the following from a recognized University/Institution:
+        </p>
+        <ul>
+            <li>Physics</li>
+            <li>Mathematics</li>
+            <li>Chemistry</li>
+            <li>Geography</li>
+            <li>Statistics</li>
+            <li>Computer Science</li>
+            <li>Aeronautical Engineering</li>
+            <li>Agricultural Engineering</li>
+            <li>Private/Commercial/Air Transport Pilot License or any other Pilot certificate</li>
         </ul>
 
-        <!-- Tabs Content -->
-        <div class="tab-content" id="navyTabsContent">
-            <!-- Executive Branch -->
-            <div class="tab-pane fade show active" id="executive" role="tabpanel">
-                <div class="row g-5 align-items-start">
-                    <div class="col-lg-7">
-                        <p>
-                            In addition to the general eligibility, applicants must have a First Degree not below
-                            Second Class Lower in any of the following from a recognized University/Institution:
-                        </p>
-                        <ul>
-                            <li>Nautical Science</li>
-                            <li>Mathematics</li>
-                            <li>Physics</li>
-                            <li>Geography</li>
-                            <li>Statistics</li>
-                            <li>Computer Science</li>
-                            <li>Oceanography</li>
-                            <li>Geomatic Engineering</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Technical Branch -->
-            <div class="tab-pane fade" id="technical" role="tabpanel">
-                <div class="row g-5 align-items-start">
-                    <div class="col-lg-7">
-                        <p>
-                            In addition to the general eligibility, applicants must have a First Degree not below
-                            Second Class Lower in any of the following from a recognized University/Institution:
-                        </p>
-                        <ul>
-                            <li>Marine Engineering</li>
-                            <li>Mechanical Engineering</li>
-                            <li>Electrical Engineering</li>
-                            <li>Marine Electrical/Electronic Engineering</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Supply & Secretarial Branch -->
-            <div class="tab-pane fade" id="supply" role="tabpanel">
-                <div class="row g-5 align-items-start">
-                    <div class="col-lg-7">
-                        <p>
-                            In addition to the general eligibility, applicants must have a First Degree not below
-                            Second Class Lower from a recognized University or equivalent Professional Institution in:
-                        </p>
-                        <ul>
-                            <li>Administration (HR/Accounting/Marketing/Banking & Finance)</li>
-                            <li>Logistics and Supply Chain Management</li>
-                            <li>Port and Shipment Administration</li>
-                            <li>Management Studies</li>
-                            <li>Procurement and Supply Chain Management</li>
-                            <li>Economics</li>
-                        </ul>
-
-                        <p class="fw-bold">Preference will be given to applicants with additional certificates in the following:</p>
-                        <ul>
-                            <li>Institute of Chartered Secretaries & Administration (ICSA) – Final Part</li>
-                            <li>Chartered Institute of Purchasing and Supply (CIPS) – Level 5</li>
-                            <li>Chartered Institute of Logistics and Transport (CILT) – Final Part</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right-side image stack -->
-            {{-- <div class="row mt-5">
-                <div class="col-lg-12 text-center">
-                    <h5 class="mb-3">GAF Navy Training in Pictures</h5>
-                    <div class="d-flex flex-wrap justify-content-center gap-3">
-                        <img src="Navy 1.png" class="img-fluid rounded" style="max-width: 200px;" alt="">
-                        <img src="SELECTED PICTURES/r1.jpg" class="img-fluid rounded" style="max-width: 280px;" alt="">
-                        <img src="SELECTED PICTURES/r2.jpg" class="img-fluid rounded" style="max-width: 280px;" alt="">
-                        <img src="SELECTED PICTURES/r3.jpg" class="img-fluid rounded" style="max-width: 280px;" alt="">
-                    </div>
-                </div>
-            </div> --}}
-        </div>
-    </div>
-</div>
-<!-- Navy End -->
-
-
-<!-- Air Force Start -->
-<div class="container-fluid about py-5">
-    <div class="container py-5">
-        <h1 class="display-5 mb-4 text-center">Air Force</h1>
-
-        <!-- Tabs Navigation -->
-        <ul class="nav nav-tabs mb-4 justify-content-center" id="airForceTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pilot-tab" data-bs-toggle="tab" data-bs-target="#pilot"
-                    type="button" role="tab">Pilots / ATC Ops</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="supply-tab" data-bs-toggle="tab" data-bs-target="#air-supply"
-                    type="button" role="tab">Supply Branch</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="admin-tab" data-bs-toggle="tab" data-bs-target="#air-admin"
-                    type="button" role="tab">Administration Branch</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="engineering-tab" data-bs-toggle="tab" data-bs-target="#engineering"
-                    type="button" role="tab">Engineering Branch</button>
-            </li>
+        <p>
+            <strong>Supply Branch.</strong><br>
+            In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in any of the following from a recognized University or equivalent professional institution:
+        </p>
+        <ul>
+            <li>Finance and Accounting</li>
+            <li>Logistics and Supply Chain Management</li>
+            <li>Marketing and Procurement</li>
         </ul>
 
-        <!-- Tabs Content -->
-        <div class="tab-content" id="airForceTabsContent">
-            <!-- Pilots / ATC Ops -->
-            <div class="tab-pane fade show active" id="pilot" role="tabpanel">
-                <div class="row g-5 align-items-start">
-                    <div class="col-lg-7">
-                        <p>In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in any of the following:</p>
-                        <ul>
-                            <li>Physics</li>
-                            <li>Mathematics</li>
-                            <li>Chemistry</li>
-                            <li>Geography</li>
-                            <li>Statistics</li>
-                            <li>Computer Science</li>
-                            <li>Aeronautical Engineering</li>
-                            <li>Agricultural Engineering</li>
-                            <li>Private/Commercial/Air Transport Pilot License</li>
-                            <li>Other Pilot Certification from a recognized institution</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <p>
+            <strong>Administration Branch.</strong><br>
+            In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in any of the following from a recognized University or equivalent professional institution:
+        </p>
+        <ul>
+            <li>Administration (HR / Public Administration)</li>
+            <li>Arts or Social Science</li>
+            <li>Management Studies</li>
+        </ul>
 
-            <!-- Supply Branch -->
-            <div class="tab-pane fade" id="air-supply" role="tabpanel">
-                <div class="row g-5 align-items-start">
-                    <div class="col-lg-7">
-                        <p>In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in:</p>
-                        <ul>
-                            <li>Finance and Accounting</li>
-                            <li>Logistics and Supply Chain Management</li>
-                            <li>Marketing and Procurement</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <p>
+            <strong>Engineering Branch:</strong>
+        </p>
 
-            <!-- Administration Branch -->
-            <div class="tab-pane fade" id="air-admin" role="tabpanel">
-                <div class="row g-5 align-items-start">
-                    <div class="col-lg-7">
-                        <p>In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in:</p>
-                        <ul>
-                            <li>Administration (HR/Public Administration)</li>
-                            <li>Arts or Social Science</li>
-                            <li>Management Studies</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <p><u>Mechanical</u><br>
+        In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower from a recognized University in the following:</p>
+        <ul>
+            <li>Aerospace Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Aeronautical Engineering</li>
+            <li>Agricultural Engineering</li>
+        </ul>
 
-            <!-- Engineering Branch -->
-            <div class="tab-pane fade" id="engineering" role="tabpanel">
-                <div class="row g-5 align-items-start">
-                    <div class="col-lg-6">
-                        <h5>Mechanical</h5>
-                        <p>In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in:</p>
-                        <ul>
-                            <li>Aerospace Engineering</li>
-                            <li>Mechanical Engineering</li>
-                            <li>Aeronautical Engineering</li>
-                            <li>Agricultural Engineering</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5>Avionics</h5>
-                        <p>In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower in:</p>
-                        <ul>
-                            <li>Electrical/Electronic Engineering</li>
-                            <li>Computer Engineering</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Right-side image stack -->
-            {{-- <div class="row mt-5">
-                <div class="col-lg-12 text-center">
-                    <h5 class="mb-3">GAF Navy Training in Pictures</h5>
-                    <div class="d-flex flex-wrap justify-content-center gap-3">
-                        <img src="Army_011 (2).png" class="img-fluid rounded" style="max-width: 200px;" alt="">
-                        <img src="SELECTED PICTURES/r4.jpg" class="img-fluid rounded" style="max-width: 280px;" alt="">
-                        <img src="SELECTED PICTURES/r5.jpg" class="img-fluid rounded" style="max-width: 280px;" alt="">
-                        <img src="SELECTED PICTURES/r6.jpg" class="img-fluid rounded" style="max-width: 280px;" alt="">
-                    </div>
-                </div>
-            </div> --}}
+        <p><u>Avionics</u><br>
+        In addition to the general eligibility, applicants must have a First Degree not below Second Class Lower from a recognized University in the following:</p>
+        <ul>
+            <li>Electrical/Electronic Engineering</li>
+            <li>Computer Engineering</li>
+        </ul>
+    </div>
+</div>
+
         </div>
     </div>
 </div>
-<!-- Air Force End -->
+
 
 
 @include('layout.footer')
