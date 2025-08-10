@@ -57,6 +57,26 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                    Basic Fitness Test Phase
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">Basic Fitness Test Phase</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Outdoor Leaderless Test Phase
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">Outdoor Leaderless Test Phase</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                     Medical Examination Phase
@@ -86,7 +106,7 @@
                                     <div class="accordion-body">Interview Phase.</div>
                                 </div>
                             </div>
-                            <div class="accordion-item rounded-bottom">
+                            {{-- <div class="accordion-item rounded-bottom">
                                 <h2 class="accordion-header" id="flush-headingSix">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                     Admission to the Training Center
@@ -95,7 +115,7 @@
                                 <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushSection">
                                     <div class="accordion-body">Admission to the Training Center.</div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

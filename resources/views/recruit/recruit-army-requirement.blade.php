@@ -66,8 +66,8 @@
 
                 <div class="tab-content" id="armyTabsContent">
                     <div class="tab-pane fade show active" id="general" role="tabpanel">
-                        <p><strong>a. Infantry/Armour/Artillery/Military Police.</strong> In addition to the General Eligibility applicants must have 6 passes at WASSCE including English and Mathematics.</p>
-                        <p><strong>b. Pay Corps.</strong> In addition to the General Eligibility applicants must have any of the following:</p>
+                        <p><strong>Infantry/Armour/Artillery/Military Police.</strong> In addition to the General Eligibility applicants must have 6 passes at WASSCE including English and Mathematics.</p>
+                        <p><strong>Pay Corps.</strong> In addition to the General Eligibility applicants must have any of the following:</p>
                         <ul>
                             <li>Six Passes (not less than Grade E8 including English and Mathematics) at WASSCE with Accounting or Business options.</li>
                             <li>RSA Stage III in Accounting.</li>
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="engineer" role="tabpanel">
-                        <p><strong>c. Engineer Corps.</strong> In addition to the General Eligibility applicants must have qualifications in:</p>
+                        <p><strong>Engineer Corps.</strong> In addition to the General Eligibility applicants must have qualifications in:</p>
                         <ul>
                             <li>Electrical Works (GES, COTVET, City & Guilds)</li>
                             <li>Plant Mechanics/Fitters (GES, COTVET, City & Guilds)</li>
@@ -88,7 +88,7 @@
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="eme" role="tabpanel">
-                        <p><strong>d. Electrical and Mechanical Engineers Corps (EME).</strong></p>
+                        <p><strong>Electrical and Mechanical Engineers Corps (EME).</strong></p>
                         <ul>
                             <li>Vehicle Mechanics</li>
                             <li>Electronics/Auto Electrician</li>
@@ -100,7 +100,7 @@
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="signals" role="tabpanel">
-                        <p><strong>e. Signals Corps</strong> and <strong>f. Information Technology (IT)</strong></p>
+                        <p><strong>Signals Corps</strong> and <strong>f. Information Technology (IT)</strong></p>
                         <ul>
                             <li>Operations Group</li>
                             <li>Radio Technician</li>
@@ -110,7 +110,7 @@
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="support" role="tabpanel">
-                        <p><strong>g. Supply and Transport Corps</strong> to <strong>k. Education Corps</strong></p>
+                        <p><strong>Supply and Transport Corps</strong> to <strong>k. Education Corps</strong></p>
                         <ul>
                             <li>Drivers, Storemen, Firemen</li>
                             <li>Photographers, PR Officers</li>

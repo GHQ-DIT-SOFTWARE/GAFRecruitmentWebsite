@@ -82,7 +82,7 @@
                                                         <div class="card border-0 shadow-sm h-100">
                                                             <div class="card-body">
                                                                 <h6 class="card-title mb-2">{{ $town }}</h6>
-                                                                <a href="#" class="btn btn-dark btn-sm rounded-pill">view Map</a>
+                                                                {{-- <a href="#" class="btn btn-dark btn-sm rounded-pill">view Map</a> --}}
                                                             </div>
                                                         </div>
                                                     </div>

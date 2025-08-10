@@ -27,7 +27,7 @@
             <div class="header-carousel owl-carousel">
                 <!-- Slide 1 -->
                 <div class="header-carousel-item">
-                    <img src="SELECTED PICTURES/_DSC1487.jpg" class="img-fluid w-100" alt="Image">
+                    <img src="GMA/7T6A0027.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row gy-0 gx-5 align-items-center">
@@ -48,7 +48,7 @@
             
                 <!-- Slide 2 -->
                 <div class="header-carousel-item">
-                    <img src="SELECTED PICTURES/r13.jpg" class="img-fluid w-100" alt="Image">
+                    <img src="GMA/1M3A0807.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row align-items-center">
@@ -69,7 +69,7 @@
 
                 <!-- Slide 3 -->
                 <div class="header-carousel-item">
-                    <img src="SELECTED PICTURES/DSC_6214.jpg" class="img-fluid w-100" alt="Image">
+                    <img src="GMA/1M3A1292.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row align-items-center">
@@ -90,7 +90,7 @@
 
                 <!-- Slide 4 -->
                 <div class="header-carousel-item">
-                    <img src="SELECTED PICTURES/22A0168.jpg" class="img-fluid w-100" alt="Image">
+                    <img src="GMA/_MG_1975-2.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row align-items-center">
@@ -231,8 +231,8 @@
                                 <i class="fas fa-file-signature fa-1x text-black"></i>
                             </div>
                             <h4>STEP 2</h4>
-                            <p class="mb-4">Click on the Apply Now tab and fill in your scratch card serial and pincode details. Select your Arm of Service and highest educational level then click on the SUBMIT button.</p>
-                            <a class="btn rounded-pill py-2 px-4 text-white" style="background-color: #000;" href="{{ url('/about') }}">Read More</a>
+                            <p class="mb-4">Click on the Apply Now tab and fill in your card serial and pincode details. Select your Arm of Service and commission type then click on the SUBMIT button.</p>
+                            <br><a class="btn rounded-pill py-2 px-4 text-white" style="background-color: #000;" href="{{ url('/about') }}">Read More</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
@@ -422,65 +422,72 @@
 
 
         <!-- Portal Start -->
-        <div class="container-fluid team pb-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h2 class="display-10 mb-4 styled-underline">Service Portals</h2>
-                    </p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item ghq">
-                            <div class="team-img">
-                                <img src="logo.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="team-title">
-                                <h4 class="mb-0"><a href="https://gafonline.mil.gh/">GHQ</a></h4>
-                                <p class="mb-0">The General Headquarters is the central command of the Ghana Armed Forces...</p>
-                            </div>
+<div class="container-fluid team pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h2 class="display-10 mb-4 styled-underline">Service Portals</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <a href="https://gafonline.mil.gh/" class="text-decoration-none text-dark">
+                    <div class="team-item ghq">
+                        <div class="team-img">
+                            <img src="logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">GHQ</h4>
+                            <p class="mb-0">The Ghana Armed Forces General Headquarters is the overall general headquaters ...</p>
                         </div>
                     </div>
+                </a>
+            </div>
 
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item army">
-                            <div class="team-img">
-                                <img src="Army_011 (1).png" class="img-fluid" alt="">
-                            </div>
-                            <div class="team-title">
-                                <h4 class="mb-0"><a href="https://ga.mil.gh/">Army</a></h4>
-                                <p class="mb-0">The Army is the land warfare branch of the Armed Forces. It is responsible...</p>
-                            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <a href="https://ga.mil.gh/" class="text-decoration-none text-dark">
+                    <div class="team-item army">
+                        <div class="team-img">
+                            <img src="Army_011 (1).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">Army</h4>
+                            <p class="mb-0">The Army is the land warfare branch of the Armed Forces. It is responsible...</p>
                         </div>
                     </div>
+                </a>
+            </div>
 
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item navy">
-                            <div class="team-img">
-                                <img src="Navy 1.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="team-title">
-                                <h4 class="mb-0"><a href="https://navyonline.mil.gh/">Navy</a></h4>
-                                <p class="mb-0">The Navy safeguards Ghana’s maritime domain. It conducts sea patrols, anti-piracy...</p>
-                            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <a href="https://navyonline.mil.gh/" class="text-decoration-none text-dark">
+                    <div class="team-item navy">
+                        <div class="team-img">
+                            <img src="Navy 1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">Navy</h4>
+                            <p class="mb-0">The Navy safeguards Ghana’s maritime domain. It conducts sea patrols, anti-piracy...</p>
                         </div>
                     </div>
+                </a>
+            </div>
 
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="team-item airforce">
-                            <div class="team-img">
-                                <img src="Army_011 (2).png" class="img-fluid" alt="">
-                            </div>
-                            <div class="team-title">
-                                <h4 class="mb-0"><a href="https://af.mil.gh/">Airforce</a></h4>
-                                <p class="mb-0">The Air Force provides aerial defense and support operations. It offers air transport...</p>
-                            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <a href="https://af.mil.gh/" class="text-decoration-none text-dark">
+                    <div class="team-item airforce">
+                        <div class="team-img">
+                            <img src="Army_011 (2).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">Airforce</h4>
+                            <p class="mb-0">The Air Force provides aerial defense and support operations. It offers air transport...</p>
                         </div>
                     </div>
-
-                </div>
+                </a>
             </div>
         </div>
-        <!-- Portal End -->
+    </div>
+</div>
+<!-- Portal End -->
+
 
         <style>
 
@@ -538,7 +545,7 @@
                                 </h2>
                                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushSection">
                                     <div class="accordion-body">Applications are submitted online through the official recruitment portal:
-                                    https://www.gafrecruitment.mil.gh
+                                    https://www.apply.mil.gh
                                     Applicants must purchase an e-voucher and fill out the online form.</div>
                                 </div>
                             </div>
@@ -549,7 +556,7 @@
                                     </button>
                                 </h2>
                                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushSection">
-                                    <div class="accordion-body">The cost of the e-voucher is usually announced in the official advertisement. It can be purchased from designated banks and post offices nationwide.</div>
+                                    <div class="accordion-body">The cost of the e-voucher is usually announced in the official advertisement. It can be purchased from post offices nationwide.</div>
                                 </div>
                             </div>
                             <div class="accordion-item rounded-bottom">
@@ -564,11 +571,47 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="bg-primary rounded">
-                            <img src="SELECTED PICTURES/lele.png" class="img-fluid w-100" alt="">
-                        </div>
-                    </div>
+                     <style>
+  .carousel-item img {
+    object-fit: cover;
+    height: 350px;
+    border-radius: 0.5rem;
+  }
+</style>
+
+<!-- Right Column: Carousel -->
+<div class="col-lg-6 text-center">
+  <div id="recruitCarousel" class="carousel slide rounded shadow" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ asset('SELECTED PICTURES/New-Banner-2-max.jpg') }}" class="d-block w-100 img-fluid" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset('SELECTED PICTURES/DSC_6202.jpg') }}" class="d-block w-100 img-fluid" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset('SELECTED PICTURES/DSC_6138.jpg') }}" class="d-block w-100 img-fluid" alt="Slide 3">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset('SELECTED PICTURES/DSC_0287.jpg') }}" class="d-block w-100 img-fluid" alt="Slide 4">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ asset('SELECTED PICTURES/r9.jpg') }}" class="d-block w-100 img-fluid" alt="Slide 5">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#recruitCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#recruitCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
                 </div>
             </div>
         </div>

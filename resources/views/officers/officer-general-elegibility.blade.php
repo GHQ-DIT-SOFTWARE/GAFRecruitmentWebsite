@@ -81,9 +81,9 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="academic-tab" data-bs-toggle="tab" data-bs-target="#academic" type="button" role="tab">Academic Requirements</button>
             </li>
-            <li class="nav-item" role="presentation">
+            {{-- <li class="nav-item" role="presentation">
                 <button class="nav-link" id="police-tab" data-bs-toggle="tab" data-bs-target="#police" type="button" role="tab">Military Police Height</button>
-            </li>
+            </li> --}}
         </ul>
 
         <style>
@@ -102,17 +102,26 @@
             <div class="col-md-6 justify-text">
                 <h4 class="mb-3 text-center">General Criteria</h4>
                 <ul class="list-unstyled mt-3">
-                    <li>✔️ Be a Ghanaian citizen by birth</li>
-                    <li>✔️ Be of good character</li>
-                    <li>✔️ Age: 18 - 26 years by 06 June 2019 (Regular) or 02 May 2019 (SSC)</li>
-                    <li>✔️ Medically fit by GAF standard</li>
-                    <li>✔️ Not bonded</li>
-                    <li>✔️ Not married (for Regular Officer only)</li>
-                    <li>✔️ Height: Minimum 1.68m (5’6”) males, 1.60m (5’4”) females</li>
+                    <li>✔️ Be a Ghanaian citizen by birth.</li>
+                    <li>✔️ Be of good character.</li>
+                    <li>✔️ Not be married (Applicable to Regular Cadets Only).</li>
+                    <li>✔️ Not be bonded.</li>
+                    <li>✔️ Not be less than 18 years and not more than 26 years by 31 March 2026	(Applicable to Regular Cadets Only).</li>
+                    <li>✔️ Be medically fit by Ghana Armed Forces standards.</li>
+                    <li>✔️ Must pass the Pre-Joining Fitness Test.</li>
+                    <li>✔️ Be of minimum height of 1 .68m (5’6") for males and 1.60m (5’2") for females..</li>
                 </ul>
             </div>
         </div>
     </div>
+
+    Eligible applicants should:
+c.          
+e.	
+f.	
+g.	
+	h.     
+
 
     <!-- Academic Requirements -->
     <div class="tab-pane fade" id="academic" role="tabpanel">

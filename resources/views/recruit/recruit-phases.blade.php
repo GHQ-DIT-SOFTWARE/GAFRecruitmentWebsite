@@ -29,7 +29,7 @@
                             <div class="accordion-item rounded-top">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Documentation Phase
+                                    Initial Documentation Phase
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushSection">
@@ -57,6 +57,26 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Trade Test
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">Trade Test</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Documentation
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">Documentation</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                     Medical Examination Phase
@@ -79,14 +99,14 @@
                             <div class="accordion-item rounded-bottom">
                                 <h2 class="accordion-header" id="flush-headingSix">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                                    Interview Phase
+                                    Receipt of Appointment Letter
                                     </button>
                                 </h2>
                                 <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushSection">
-                                    <div class="accordion-body">Interview Phase.</div>
+                                    <div class="accordion-body">Receipt of Appointment Letter.</div>
                                 </div>
                             </div>
-                            <div class="accordion-item rounded-bottom">
+                            {{-- <div class="accordion-item rounded-bottom">
                                 <h2 class="accordion-header" id="flush-headingSix">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                     Admission to the Training Center
@@ -95,7 +115,7 @@
                                 <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushSection">
                                     <div class="accordion-body">Admission to the Training Center.</div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

@@ -71,8 +71,8 @@
             <div class="col-md-5">
                 <h2 class="mb-4">Getting Started</h2>
                 <ol>
-                    <li>Acquire a scratch card at GH₵100.00 from selected post offices nationwide.</li>
-                    <li>Scratch gently to reveal the “PIN” code. The scratch card can be used up to three times until a record is successfully submitted.</li>
+                    <li>Acquire a voucher at GH₵300.00 from selected post offices nationwide.</li>
+                    <li>Scratch gently to reveal the “PIN” code. The voucher can be used up to three times until a record is successfully submitted.</li>
                     <li>Log on to the recruitment portal at <a href="http://www.apply.mil.gh" target="_blank">apply.mil.gh</a> using Google Chrome or Mozilla Firefox.</li>
                     <li>Click the “Apply Now” tab on the portal to open the authentication page.</li>
                 </ol>
